@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztrációs Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Spectral&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Regisztráció</h1>
+        <form id="registration-form">
+            <div class="form-group">
+                <label for="name">Név</label>
+                <input type="text" id="name" name="name" required placeholder="Név">
+            </div>
+            <div class="form-group">
+                <label for="email">Email cím</label>
+                <input type="email" id="email" name="email" required placeholder="példa@minta.com">
+            </div>
+            <div class="form-group">
+                <label for="confirm-email">Email cím megerősítése</label>
+                <input type="email" id="confirm-email" name="confirm-email" required placeholder="példa@minta.com">
+            </div>
+            <div class="form-group">
+                <label for="source">Honnan hallott rólunk?</label>
+                <select id="source" name="source">
+                    <option class="selectoption" value="internetrol">Internetről</option>
+                    <option class="selectoption" value="televiziobol">Televízióból</option>
+                    <option class="selectoption" value="egyeb">Egyéb helyről</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="accept-terms" name="accept-terms" required>
+                    Adatkezelési nyilatkozatot elfogadom
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Regisztráció</button>
+            </div>
+        </form>
+        <div id="success-message" class="hidden">
+            <p>A regisztráció sikeresen elküldve!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
